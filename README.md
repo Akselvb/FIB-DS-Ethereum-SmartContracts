@@ -36,7 +36,7 @@ module.exports = {
 ```
 3. run *testrpc*
 4. run *truffle compile*
-5. run truffle migrate --reset*
+5. run *truffle migrate --reset*
 6. run *truffle console*
 7. NameOfFile.deployed().then(function(instance){objectName=instance})
 ..* objectName.getValue()
