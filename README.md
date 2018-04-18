@@ -40,8 +40,8 @@ module.exports = {
 6. run *truffle console*
 7. NameOfFile.deployed().then(function(instance){objectName=instance})
 
-... objectName.getValue()
-... objectName.setValue("Values", "to", "insert")
+⋅⋅⋅objectName.getValue()
+⋅⋅⋅objectName.setValue("Values", "to", "insert")
 
 ## Smart Contract Lottery
 
