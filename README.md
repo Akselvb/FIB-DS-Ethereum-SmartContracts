@@ -20,10 +20,10 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 * [Intro to Smart Contracts](https://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html)
 * [Solidity tutorial](https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html)
 
-## How to deploy and use a Smart Contract on a test blockchain
+## How to deploy a Smart Contract implementation on Ethereum test blockchain
 1. run *truffle init*
 2. Copy-paste the following to *truffle.js*
-```
+```javascript
 module.exports = {
   networks: {
     development: {
@@ -39,8 +39,8 @@ module.exports = {
 5. run *truffle migrate --reset*
 6. run *truffle console*
 7. NameOfFile.deployed().then(function(instance){objectName=instance})
-⋅⋅* objectName.getValue()
-⋅⋅* objectName.setValue("Values", "to", "insert")
+  - objectName.getValue()
+  - objectName.setValue("Values", "to", "insert")
 
 ## Smart Contract Lottery
 
