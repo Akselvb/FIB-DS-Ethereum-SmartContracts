@@ -39,6 +39,7 @@ module.exports = {
 5. run *truffle migrate --reset*
 6. run *truffle console*
 7. NameOfFile.deployed().then(function(instance){objectName=instance})
+
 ... objectName.getValue()
 ... objectName.setValue("Values", "to", "insert")
 
