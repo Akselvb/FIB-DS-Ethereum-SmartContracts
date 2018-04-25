@@ -19,6 +19,10 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 * [Intro to Ethereum smart contract w/ Solidity, Part II](https://www.youtube.com/watch?v=3-XPBtAfcqo)
 * [Intro to Smart Contracts](https://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html)
 * [Solidity tutorial](https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html)
+* [Solidity tutorial 2](http://truffleframework.com/tutorials/pet-shop)
+* [Ganache](http://truffleframework.com/ganache/)
+* [MetaMask](https://metamask.io/)
+
 
 ## How to deploy a Smart Contract implementation on Ethereum test blockchain
 1. run *truffle init*
