@@ -23,6 +23,13 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 * [Ganache](http://truffleframework.com/ganache/)
 * [MetaMask](https://metamask.io/)
 
+## Keywords/things we might use for presentation
+- Different rules for lottery. Different methods we could have used in order to determine the winner.
+- How to generate random number? The coude should be deterministic since it runs on multiple nodes.
+- Clock time is not available on Ethereum. How to decide when to pick a winner.
+- How to implement the code in order to minimize gas cost.
+
+
 
 ## How to deploy a Smart Contract implementation on Ethereum test blockchain
 1. run *truffle init*
