@@ -14,21 +14,21 @@ contract Lottery {
 
 
   function addPlayer() payable {
-    require(totalAmount + msg.value <= 1 ether)
-    address playerAddress = msg.sender;
-    uint256 amount = msg.value;
+    require(totalAmount + msg.value <= 1 ether);
 
     Player memory newPlayer;
-    newPlayer.playerAddress = playerAddress;
-    newPlayer.amount = amount;
+    newPlayer.playerAddress = msg.sender;
+    newPlayer.amount = msg.value;
 
-    player.push(newPlayer);
+    players.push(newPlayer);
 
-    totalAmount += _amount;
+    totalAmount += msg.value;
 
+/*
     if (totalAmount == 1 ether) {
       playLottery();
     }
+*/
   }
 
 
@@ -54,11 +54,13 @@ contract Lottery {
   }
 
 
+/*
   function playLottery() returns (Player) {
     // TODO: Add logic to determine which player wins.
-    players[0].transfer(this.balance);
+    //players[0].transfer(this.balance);
+    return players[0];
   }
-
+*/
 
 
 }
