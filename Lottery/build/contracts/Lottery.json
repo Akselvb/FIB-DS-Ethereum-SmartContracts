@@ -92,20 +92,20 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6107128061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806312065fe01461007257806327b5db8a1461009b5780638b5b9ccc146100a5578063d4cd77a314610157578063f71d96cb1461016c575b600080fd5b341561007d57600080fd5b6100856101d6565b6040518082815260200191505060405180910390f35b6100a36101e0565b005b34156100b057600080fd5b6100b86102f1565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100ff5780820151818401526020810190506100e4565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015610141578082015181840152602081019050610126565b5050505090500194505050505060405180910390f35b341561016257600080fd5b61016a61048a565b005b341561017757600080fd5b61018d60048080359060200190919050506105bb565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b6000600154905090565b6101e861060e565b670de0b6b3a764000034600154011115151561020357600080fd5b33816000019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250503481602001818152505060008054806001018281610259919061063e565b9160005260206000209060020201600083909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015550505034600160008282540192505081905550670d2f13f7789f000060015411156102ee576102ed61048a565b5b50565b6102f9610670565b610301610684565b600061030b610670565b610313610684565b600061031d61060e565b6000805490509450846040518059106103335750595b90808252806020026020018201604052509350846040518059106103545750595b90808252806020026020018201604052509250600091505b8482101561047b5760008281548110151561038357fe5b90600052602060002090600202016040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160018201548152505090508060000151848381518110151561041157fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060200151838381518110151561046057fe5b9060200190602002018181525050818060010192505061036c565b83839650965050505050509091565b60008081548110151561049957fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6001549081150290604051600060405180830381858888f19350505050151561050c57600080fd5b7f80e009436f30a4f32133e25b51b5349f2842ea9e93ea4fb6cdaaa4b4e518c68760008081548110151561053c57fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600154604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1565b6000818154811015156105ca57fe5b90600052602060002090600202016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b81548183558181151161066b5760020281600202836000526020600020918201910161066a9190610698565b5b505050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b6106e391905b808211156106df57600080820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560018201600090555060020161069e565b5090565b905600a165627a7a7230582042b8b1115038ffb2a396d3fce9377fd316345f73a31a251bb5f47a911a511ff30029",
-  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806312065fe01461007257806327b5db8a1461009b5780638b5b9ccc146100a5578063d4cd77a314610157578063f71d96cb1461016c575b600080fd5b341561007d57600080fd5b6100856101d6565b6040518082815260200191505060405180910390f35b6100a36101e0565b005b34156100b057600080fd5b6100b86102f1565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100ff5780820151818401526020810190506100e4565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015610141578082015181840152602081019050610126565b5050505090500194505050505060405180910390f35b341561016257600080fd5b61016a61048a565b005b341561017757600080fd5b61018d60048080359060200190919050506105bb565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b6000600154905090565b6101e861060e565b670de0b6b3a764000034600154011115151561020357600080fd5b33816000019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250503481602001818152505060008054806001018281610259919061063e565b9160005260206000209060020201600083909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015550505034600160008282540192505081905550670d2f13f7789f000060015411156102ee576102ed61048a565b5b50565b6102f9610670565b610301610684565b600061030b610670565b610313610684565b600061031d61060e565b6000805490509450846040518059106103335750595b90808252806020026020018201604052509350846040518059106103545750595b90808252806020026020018201604052509250600091505b8482101561047b5760008281548110151561038357fe5b90600052602060002090600202016040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160018201548152505090508060000151848381518110151561041157fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060200151838381518110151561046057fe5b9060200190602002018181525050818060010192505061036c565b83839650965050505050509091565b60008081548110151561049957fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6001549081150290604051600060405180830381858888f19350505050151561050c57600080fd5b7f80e009436f30a4f32133e25b51b5349f2842ea9e93ea4fb6cdaaa4b4e518c68760008081548110151561053c57fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600154604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1565b6000818154811015156105ca57fe5b90600052602060002090600202016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b81548183558181151161066b5760020281600202836000526020600020918201910161066a9190610698565b5b505050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b6106e391905b808211156106df57600080820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560018201600090555060020161069e565b5090565b905600a165627a7a7230582042b8b1115038ffb2a396d3fce9377fd316345f73a31a251bb5f47a911a511ff30029",
-  "sourceMap": "26:1204:0:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:1204:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;977:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;214:291;;;;;;510:462;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;510:462:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;510:462:0;;;;;;;;;;;;;;;;;;;1052:175;;;;;;;;;;;;;;49:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;977:70;1017:7;1039:3;;1032:10;;977:70;:::o;214:291::-;291:23;;:::i;:::-;276:7;263:9;257:3;;:15;:26;;249:35;;;;;;;;346:10;320:9;:23;;:36;;;;;;;;;;;381:9;362;:16;;:28;;;;;397:7;:23;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;410:9;397:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;434:9;427:3;;:16;;;;;;;;;;;460:10;454:3;;:16;450:51;;;481:13;:11;:13::i;:::-;450:51;214:291;:::o;510:462::-;550:9;;:::i;:::-;561:6;;:::i;:::-;575:11;610:32;;:::i;:::-;672:21;;:::i;:::-;726:6;763:27;;:::i;:::-;589:7;:14;;;;575:28;;659:6;645:21;;;;;;;;;;;;;;;;;;;;;;;;610:56;;707:6;696:18;;;;;;;;;;;;;;;;;;;;;;;;672:42;;735:1;726:10;;721:208;742:6;738:1;:10;721:208;;;814:7;822:1;814:10;;;;;;;;;;;;;;;;;;;;798:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;854:13;:27;;;833:15;849:1;833:18;;;;;;;;;;;;;;;;;:48;;;;;;;;;;;902:13;:20;;;889:7;897:1;889:10;;;;;;;;;;;;;;;;;:33;;;;;750:3;;;;;;;721:208;;;942:15;959:7;934:33;;;;510:462;;;;;;;:::o;1052:175::-;1136:7;1144:1;1136:10;;;;;;;;;;;;;;;;;;;;:24;;;;;;;;;;;;:33;;:38;1170:3;;1136:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1180:42;1192:7;1200:1;1192:10;;;;;;;;;;;;;;;;;;;;:24;;;;;;;;;;;;1218:3;;1180:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;1052:175::o;49:23::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;26:1204::-;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.17;\n\ncontract Lottery {\n\n\n  Player[] public players;\n  uint256 pot;\n\n  event PayoutEvent(address target, uint amount);\n\n  struct Player {\n    address playerAddress;\n    uint256 amount;\n  }\n\n\n  function addPlayer() payable {\n    require(pot + msg.value <= 1 ether);\n\n    Player memory newPlayer;\n    newPlayer.playerAddress = msg.sender;\n    newPlayer.amount = msg.value;\n\n    players.push(newPlayer);\n\n    pot += msg.value;\n\n    if (pot > 0.95 ether ) {\n      playLottery();\n    }\n  }\n\n\n  function getPlayers() constant returns (address[], uint[]) {\n    uint length = players.length;\n\n    address[] memory playerAddresses = new address[](length);\n    uint[] memory amounts = new uint[](length);\n\n    for (uint i = 0; i < length; i++) {\n      Player memory currentPlayer;\n      currentPlayer = players[i];\n\n      playerAddresses[i] = currentPlayer.playerAddress;\n      amounts[i] = currentPlayer.amount;\n    }\n    return (playerAddresses, amounts);\n  }\n\n\n  function getBalance() constant returns (uint256) {\n    return pot;\n  }\n\n\n  function playLottery() {\n    // TODO: Add logic to determine which player wins.\n    players[0].playerAddress.transfer(pot);\n    PayoutEvent(players[0].playerAddress, pot);\n  }\n\n}\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b61071a8061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806312065fe01461007257806327b5db8a1461009b5780638b5b9ccc146100a5578063d4cd77a314610157578063f71d96cb1461016c575b600080fd5b341561007d57600080fd5b6100856101d6565b6040518082815260200191505060405180910390f35b6100a36101e0565b005b34156100b057600080fd5b6100b86102f1565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100ff5780820151818401526020810190506100e4565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015610141578082015181840152602081019050610126565b5050505090500194505050505060405180910390f35b341561016257600080fd5b61016a61048a565b005b341561017757600080fd5b61018d60048080359060200190919050506105c3565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b6000600154905090565b6101e8610616565b670de0b6b3a764000034600154011115151561020357600080fd5b33816000019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505034816020018181525050600080548060010182816102599190610646565b9160005260206000209060020201600083909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015550505034600160008282540192505081905550670d2f13f7789f000060015411156102ee576102ed61048a565b5b50565b6102f9610678565b61030161068c565b600061030b610678565b61031361068c565b600061031d610616565b6000805490509450846040518059106103335750595b90808252806020026020018201604052509350846040518059106103545750595b90808252806020026020018201604052509250600091505b8482101561047b5760008281548110151561038357fe5b90600052602060002090600202016040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160018201548152505090508060000151848381518110151561041157fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060200151838381518110151561046057fe5b9060200190602002018181525050818060010192505061036c565b83839650965050505050509091565b60008081548110151561049957fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6001549081150290604051600060405180830381858888f19350505050151561050c57600080fd5b60006001819055507f80e009436f30a4f32133e25b51b5349f2842ea9e93ea4fb6cdaaa4b4e518c68760008081548110151561054457fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600154604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1565b6000818154811015156105d257fe5b90600052602060002090600202016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116106735760020281600202836000526020600020918201910161067291906106a0565b5b505050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b6106eb91905b808211156106e757600080820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556001820160009055506002016106a6565b5090565b905600a165627a7a7230582047790006b43b5a8e16fe750dff94c93262bfb16ac60a94e493b4340017d7808b0029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806312065fe01461007257806327b5db8a1461009b5780638b5b9ccc146100a5578063d4cd77a314610157578063f71d96cb1461016c575b600080fd5b341561007d57600080fd5b6100856101d6565b6040518082815260200191505060405180910390f35b6100a36101e0565b005b34156100b057600080fd5b6100b86102f1565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100ff5780820151818401526020810190506100e4565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015610141578082015181840152602081019050610126565b5050505090500194505050505060405180910390f35b341561016257600080fd5b61016a61048a565b005b341561017757600080fd5b61018d60048080359060200190919050506105c3565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b6000600154905090565b6101e8610616565b670de0b6b3a764000034600154011115151561020357600080fd5b33816000019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505034816020018181525050600080548060010182816102599190610646565b9160005260206000209060020201600083909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015550505034600160008282540192505081905550670d2f13f7789f000060015411156102ee576102ed61048a565b5b50565b6102f9610678565b61030161068c565b600061030b610678565b61031361068c565b600061031d610616565b6000805490509450846040518059106103335750595b90808252806020026020018201604052509350846040518059106103545750595b90808252806020026020018201604052509250600091505b8482101561047b5760008281548110151561038357fe5b90600052602060002090600202016040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160018201548152505090508060000151848381518110151561041157fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060200151838381518110151561046057fe5b9060200190602002018181525050818060010192505061036c565b83839650965050505050509091565b60008081548110151561049957fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6001549081150290604051600060405180830381858888f19350505050151561050c57600080fd5b60006001819055507f80e009436f30a4f32133e25b51b5349f2842ea9e93ea4fb6cdaaa4b4e518c68760008081548110151561054457fe5b906000526020600020906002020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600154604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1565b6000818154811015156105d257fe5b90600052602060002090600202016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116106735760020281600202836000526020600020918201910161067291906106a0565b5b505050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b6106eb91905b808211156106e757600080820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556001820160009055506002016106a6565b5090565b905600a165627a7a7230582047790006b43b5a8e16fe750dff94c93262bfb16ac60a94e493b4340017d7808b0029",
+  "sourceMap": "26:1216:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:1216:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;977:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;214:291;;;;;;510:462;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;510:462:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;510:462:0;;;;;;;;;;;;;;;;;;;1052:188;;;;;;;;;;;;;;49:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;977:70;1017:7;1039:3;;1032:10;;977:70;:::o;214:291::-;291:23;;:::i;:::-;276:7;263:9;257:3;;:15;:26;;249:35;;;;;;;;346:10;320:9;:23;;:36;;;;;;;;;;;381:9;362;:16;;:28;;;;;397:7;:23;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;410:9;397:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;434:9;427:3;;:16;;;;;;;;;;;460:10;454:3;;:16;450:51;;;481:13;:11;:13::i;:::-;450:51;214:291;:::o;510:462::-;550:9;;:::i;:::-;561:6;;:::i;:::-;575:11;610:32;;:::i;:::-;672:21;;:::i;:::-;726:6;763:27;;:::i;:::-;589:7;:14;;;;575:28;;659:6;645:21;;;;;;;;;;;;;;;;;;;;;;;;610:56;;707:6;696:18;;;;;;;;;;;;;;;;;;;;;;;;672:42;;735:1;726:10;;721:208;742:6;738:1;:10;721:208;;;814:7;822:1;814:10;;;;;;;;;;;;;;;;;;;;798:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;854:13;:27;;;833:15;849:1;833:18;;;;;;;;;;;;;;;;;:48;;;;;;;;;;;902:13;:20;;;889:7;897:1;889:10;;;;;;;;;;;;;;;;;:33;;;;;750:3;;;;;;;721:208;;;942:15;959:7;934:33;;;;510:462;;;;;;;:::o;1052:188::-;1136:7;1144:1;1136:10;;;;;;;;;;;;;;;;;;;;:24;;;;;;;;;;;;:33;;:38;1170:3;;1136:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1186:1;1180:3;:7;;;;1193:42;1205:7;1213:1;1205:10;;;;;;;;;;;;;;;;;;;;:24;;;;;;;;;;;;1231:3;;1193:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;1052:188::o;49:23::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;26:1216::-;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Lottery {\n\n\n  Player[] public players;\n  uint256 pot;\n\n  event PayoutEvent(address target, uint amount);\n\n  struct Player {\n    address playerAddress;\n    uint256 amount;\n  }\n\n\n  function addPlayer() payable {\n    require(pot + msg.value <= 1 ether);\n\n    Player memory newPlayer;\n    newPlayer.playerAddress = msg.sender;\n    newPlayer.amount = msg.value;\n\n    players.push(newPlayer);\n\n    pot += msg.value;\n\n    if (pot > 0.95 ether ) {\n      playLottery();\n    }\n  }\n\n\n  function getPlayers() constant returns (address[], uint[]) {\n    uint length = players.length;\n\n    address[] memory playerAddresses = new address[](length);\n    uint[] memory amounts = new uint[](length);\n\n    for (uint i = 0; i < length; i++) {\n      Player memory currentPlayer;\n      currentPlayer = players[i];\n\n      playerAddresses[i] = currentPlayer.playerAddress;\n      amounts[i] = currentPlayer.amount;\n    }\n    return (playerAddresses, amounts);\n  }\n\n\n  function getBalance() constant returns (uint256) {\n    return pot;\n  }\n\n\n  function playLottery() {\n    // TODO: Add logic to determine which player wins.\n    players[0].playerAddress.transfer(pot);\n    pot = 0;\n    PayoutEvent(players[0].playerAddress, pot);\n  }\n}\n",
   "sourcePath": "/Users/vincent/Documents/FIB/DS/Project/FIB-DS-Ethereum-SmartContracts/Lottery/contracts/Lottery.sol",
   "ast": {
     "absolutePath": "/Users/vincent/Documents/FIB/DS/Project/FIB-DS-Ethereum-SmartContracts/Lottery/contracts/Lottery.sol",
     "exportedSymbols": {
       "Lottery": [
-        169
+        173
       ]
     },
-    "id": 170,
+    "id": 174,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -125,9 +125,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 169,
+        "id": 173,
         "linearizedBaseContracts": [
-          169
+          173
         ],
         "name": "Lottery",
         "nodeType": "ContractDefinition",
@@ -137,7 +137,7 @@
             "id": 4,
             "name": "players",
             "nodeType": "VariableDeclaration",
-            "scope": 169,
+            "scope": 173,
             "src": "49:23:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -175,7 +175,7 @@
             "id": 6,
             "name": "pot",
             "nodeType": "VariableDeclaration",
-            "scope": 169,
+            "scope": 173,
             "src": "76:11:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -324,7 +324,7 @@
             ],
             "name": "Player",
             "nodeType": "StructDefinition",
-            "scope": 169,
+            "scope": 173,
             "src": "143:66:0",
             "visibility": "public"
           },
@@ -383,7 +383,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 182,
+                              "referencedDeclaration": 186,
                               "src": "263:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -448,7 +448,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 185,
+                      "referencedDeclaration": 189,
                       "src": "249:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -557,7 +557,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "346:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -635,7 +635,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "381:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -767,7 +767,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "434:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -868,7 +868,7 @@
                             "name": "playLottery",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 168,
+                            "referencedDeclaration": 172,
                             "src": "481:11:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -919,7 +919,7 @@
               "parameters": [],
               "src": "243:0:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "214:291:0",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1806,7 +1806,7 @@
               ],
               "src": "549:19:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "510:462:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -1887,7 +1887,7 @@
               ],
               "src": "1016:9:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "977:70:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -1895,9 +1895,9 @@
           },
           {
             "body": {
-              "id": 167,
+              "id": 171,
               "nodeType": "Block",
-              "src": "1075:152:0",
+              "src": "1075:165:0",
               "statements": [
                 {
                   "expression": {
@@ -2020,6 +2020,57 @@
                 {
                   "expression": {
                     "argumentTypes": null,
+                    "id": 161,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 159,
+                      "name": "pot",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "1180:3:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 160,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1186:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1180:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 162,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1180:7:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -2027,29 +2078,29 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 160,
+                            "id": 164,
                             "name": "players",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4,
-                            "src": "1192:7:0",
+                            "src": "1205:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Player_$17_storage_$dyn_storage",
                               "typeString": "struct Lottery.Player storage ref[] storage ref"
                             }
                           },
-                          "id": 162,
+                          "id": 166,
                           "indexExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 161,
+                            "id": 165,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1200:1:0",
+                            "src": "1213:1:0",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
@@ -2062,13 +2113,13 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1192:10:0",
+                          "src": "1205:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Player_$17_storage",
                             "typeString": "struct Lottery.Player storage ref"
                           }
                         },
-                        "id": 163,
+                        "id": 167,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -2076,7 +2127,7 @@
                         "memberName": "playerAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 14,
-                        "src": "1192:24:0",
+                        "src": "1205:24:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2084,12 +2135,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 164,
+                        "id": 168,
                         "name": "pot",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 6,
-                        "src": "1218:3:0",
+                        "src": "1231:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2107,18 +2158,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 159,
+                      "id": 163,
                       "name": "PayoutEvent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 12,
-                      "src": "1180:11:0",
+                      "src": "1193:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 165,
+                    "id": 169,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2126,20 +2177,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1180:42:0",
+                    "src": "1193:42:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 166,
+                  "id": 170,
                   "nodeType": "ExpressionStatement",
-                  "src": "1180:42:0"
+                  "src": "1193:42:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 168,
+            "id": 172,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2159,27 +2210,27 @@
               "parameters": [],
               "src": "1075:0:0"
             },
-            "scope": 169,
-            "src": "1052:175:0",
+            "scope": 173,
+            "src": "1052:188:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 170,
-        "src": "26:1204:0"
+        "scope": 174,
+        "src": "26:1216:0"
       }
     ],
-    "src": "0:1231:0"
+    "src": "0:1243:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/vincent/Documents/FIB/DS/Project/FIB-DS-Ethereum-SmartContracts/Lottery/contracts/Lottery.sol",
     "exportedSymbols": {
       "Lottery": [
-        169
+        173
       ]
     },
-    "id": 170,
+    "id": 174,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -2199,9 +2250,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 169,
+        "id": 173,
         "linearizedBaseContracts": [
-          169
+          173
         ],
         "name": "Lottery",
         "nodeType": "ContractDefinition",
@@ -2211,7 +2262,7 @@
             "id": 4,
             "name": "players",
             "nodeType": "VariableDeclaration",
-            "scope": 169,
+            "scope": 173,
             "src": "49:23:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2249,7 +2300,7 @@
             "id": 6,
             "name": "pot",
             "nodeType": "VariableDeclaration",
-            "scope": 169,
+            "scope": 173,
             "src": "76:11:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2398,7 +2449,7 @@
             ],
             "name": "Player",
             "nodeType": "StructDefinition",
-            "scope": 169,
+            "scope": 173,
             "src": "143:66:0",
             "visibility": "public"
           },
@@ -2457,7 +2508,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 182,
+                              "referencedDeclaration": 186,
                               "src": "263:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2522,7 +2573,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 185,
+                      "referencedDeclaration": 189,
                       "src": "249:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2631,7 +2682,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "346:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2709,7 +2760,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "381:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2841,7 +2892,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 182,
+                        "referencedDeclaration": 186,
                         "src": "434:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2942,7 +2993,7 @@
                             "name": "playLottery",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 168,
+                            "referencedDeclaration": 172,
                             "src": "481:11:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -2993,7 +3044,7 @@
               "parameters": [],
               "src": "243:0:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "214:291:0",
             "stateMutability": "payable",
             "superFunction": null,
@@ -3880,7 +3931,7 @@
               ],
               "src": "549:19:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "510:462:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -3961,7 +4012,7 @@
               ],
               "src": "1016:9:0"
             },
-            "scope": 169,
+            "scope": 173,
             "src": "977:70:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -3969,9 +4020,9 @@
           },
           {
             "body": {
-              "id": 167,
+              "id": 171,
               "nodeType": "Block",
-              "src": "1075:152:0",
+              "src": "1075:165:0",
               "statements": [
                 {
                   "expression": {
@@ -4094,6 +4145,57 @@
                 {
                   "expression": {
                     "argumentTypes": null,
+                    "id": 161,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 159,
+                      "name": "pot",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "1180:3:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 160,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1186:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1180:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 162,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1180:7:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -4101,29 +4203,29 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 160,
+                            "id": 164,
                             "name": "players",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4,
-                            "src": "1192:7:0",
+                            "src": "1205:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Player_$17_storage_$dyn_storage",
                               "typeString": "struct Lottery.Player storage ref[] storage ref"
                             }
                           },
-                          "id": 162,
+                          "id": 166,
                           "indexExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 161,
+                            "id": 165,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1200:1:0",
+                            "src": "1213:1:0",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
@@ -4136,13 +4238,13 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1192:10:0",
+                          "src": "1205:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Player_$17_storage",
                             "typeString": "struct Lottery.Player storage ref"
                           }
                         },
-                        "id": 163,
+                        "id": 167,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -4150,7 +4252,7 @@
                         "memberName": "playerAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 14,
-                        "src": "1192:24:0",
+                        "src": "1205:24:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -4158,12 +4260,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 164,
+                        "id": 168,
                         "name": "pot",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 6,
-                        "src": "1218:3:0",
+                        "src": "1231:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4181,18 +4283,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 159,
+                      "id": 163,
                       "name": "PayoutEvent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 12,
-                      "src": "1180:11:0",
+                      "src": "1193:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 165,
+                    "id": 169,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4200,20 +4302,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1180:42:0",
+                    "src": "1193:42:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 166,
+                  "id": 170,
                   "nodeType": "ExpressionStatement",
-                  "src": "1180:42:0"
+                  "src": "1193:42:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 168,
+            "id": 172,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -4233,18 +4335,18 @@
               "parameters": [],
               "src": "1075:0:0"
             },
-            "scope": 169,
-            "src": "1052:175:0",
+            "scope": 173,
+            "src": "1052:188:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 170,
-        "src": "26:1204:0"
+        "scope": 174,
+        "src": "26:1216:0"
       }
     ],
-    "src": "0:1231:0"
+    "src": "0:1243:0"
   },
   "compiler": {
     "name": "solc",
@@ -4274,8 +4376,20 @@
       "links": {},
       "address": "0xf5c9655c04acefea6626f2a251c6e778664ef9eb",
       "transactionHash": "0xe2037045649f98fead2e15276e5704796fb6eae45ed5fd66f09e5eae4c59bd39"
+    },
+    "1524929252752": {
+      "events": {},
+      "links": {},
+      "address": "0x4002211ea76261ebc4c42f0f707b35742f8dd3fc",
+      "transactionHash": "0xe9e9bf8cd17620ab4e17805dcb02ecdca27bbb5dd9de21a2ecea328c1275c020"
+    },
+    "1524929373613": {
+      "events": {},
+      "links": {},
+      "address": "0xcfc3f20e6391b5b45b0b4cf79c15f807313d75b8",
+      "transactionHash": "0x519549669fce513ae5c7c944936812dfb62e90468c6d52a8b657383bcc4fce69"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-28T14:42:57.277Z"
+  "updatedAt": "2018-04-28T15:29:48.042Z"
 }

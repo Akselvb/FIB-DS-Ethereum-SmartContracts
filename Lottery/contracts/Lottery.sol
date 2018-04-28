@@ -56,6 +56,7 @@ contract Lottery {
   function playLottery() {
     // TODO: Add logic to determine which player wins.
     players[0].playerAddress.transfer(pot);
+    pot = 0;
     PayoutEvent(players[0].playerAddress, pot);
   }
 }
