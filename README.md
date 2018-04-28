@@ -5,9 +5,17 @@ Lab solution in course Decentralized Systems, FIB UPC - Leonard Halling and Akse
 
 As the scope of the lab description states, we will implement and evaluate a Decentralized Application [*dApp*]. The dApp that is going to be made is a **Lottery System** built upon **Smart Contracts**, deployed on the **Ethereum Platform**.
 
+
+### TODO's
+* Implement logic for how to pick the winner. Need to randomly pick a number and find the winner using this.
+* Implement how to decide when the lottery should trigger.
+* Make intermediate presentation powerpoint.
+
+
 ### Deadlines
-* **Tuesday 08.05.2018**: Intermediate results presentation.
+* **Tuesday 08.05.2018**: Group work intermediate results.
 * **Tuesday 31.05.2018**: Final presentation.
+
 
 ### Links/resources
 * [Ethereum](https://www.ethereum.org)
@@ -22,25 +30,6 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 * [Solidity tutorial 2](http://truffleframework.com/tutorials/pet-shop)
 * [Ganache](http://truffleframework.com/ganache/)
 * [MetaMask](https://metamask.io/)
-* [Predicting random numbers in Ethereum Smart Contracts](https://blog.positive.com/predicting-random-numbers-in-ethereum-smart-contracts-e5358c6b8620)
-
-
-## Keywords - Intermediate presentation
-- A quick summary of smart contracts.
-- A quick summary of the lottery rules.
-- Fully implemented the functionality of the Lottery.
-- Explain the function of each file, and maybe keywords as well.
-- Which technologies are used? Why? A short description of each.
-- Teaser of what the final presentation is going to regard.
-
-## Keywords - Final presentation
-- Why is it better to implement this on a blockchain, in a decentralized way, compared to using a centralized server.
-- Show how it is implemented in a test environment, and what to change in order to deploy it on the actual Ethereum blockchain.
-- Different rules for lottery. Different methods we could have used in order to determine the winner.
-- How to generate random number? The code should be deterministic since it runs on multiple (16k) nodes. I think this might be one of the main issues and subjects of our presentation. 
-- Clock time is not available on Ethereum. How to decide when to pick a winner.
-- What is gas? How to implement the code in order to minimize gas cost.
-
 
 
 ## How to deploy a Smart Contract implementation on Ethereum test blockchain
@@ -65,6 +54,18 @@ module.exports = {
   - objectName.getValue()
   - objectName.setValue("Values", "to", "insert")
 
+
+## Truffle nice to know.
+After running *truffle migrate --reset*, the owner address of the contract is generated.
+[TruffleMigrate](images/truffle_migrate.png)
+
+- Save an account to a variable: **account0 = web3.eth.accounts[0]**
+- Create an instance of the Smart Contract: **Lottery.deployed().then(inst => {lottery=inst})**
+- Add a new player to the lottery: **lottery.addPlayer({from: account0, value: web3.toWei(1.0, "ether")})**
+- Call get functions: **lottery.getPlayers()**
+- Get balance of account: **web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]))**
+
+
 ## Smart Contract Lottery
 
 ### Rules
@@ -75,5 +76,3 @@ A generic description of the smart contract lottery system.
 * There’s a limit of how much Ether one participant can insert.
 * The chances of winning is based on the amount of Ether inserted by each participant.
 * When the winner has been decided, the winnings will be rewarded to the winner, and the other participants will be notified that the game has ended.
-
-
