@@ -20,6 +20,12 @@ contract Lottery {
   }
 
 
+  function restartLottery() public {
+    numPlayers = 0;
+    pot = 0;
+  }
+
+
   function addPlayer() payable public {
     require(pot + msg.value <= 10 ether);
 
@@ -43,12 +49,6 @@ contract Lottery {
     if (pot > 9.5 ether ) {
       playLottery();
     }
-  }
-
-
-  function restartLottery() public {
-    numPlayers = 0;
-    pot = 0;
   }
 
 
