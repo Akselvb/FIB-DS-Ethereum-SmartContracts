@@ -4,8 +4,9 @@ contract Lottery {
 
 
   Player[] public players;
-  uint256 totalAmount;
+  uint256 pot;
 
+  event PayoutEvent(address target, uint amount);
 
   struct Player {
     address playerAddress;
@@ -14,7 +15,7 @@ contract Lottery {
 
 
   function addPlayer() payable {
-    require(totalAmount + msg.value <= 1 ether);
+    require(pot + msg.value <= 1 ether);
 
     Player memory newPlayer;
     newPlayer.playerAddress = msg.sender;
@@ -22,13 +23,11 @@ contract Lottery {
 
     players.push(newPlayer);
 
-    totalAmount += msg.value;
+    pot += msg.value;
 
-/*
-    if (totalAmount == 1 ether) {
+    if (pot > 0.95 ether ) {
       playLottery();
     }
-*/
   }
 
 
@@ -49,18 +48,14 @@ contract Lottery {
   }
 
 
-  function getTotalAmount() constant returns (uint) {
-    return (totalAmount);
+  function getBalance() constant returns (uint256) {
+    return pot;
   }
 
 
-/*
-  function playLottery() returns (Player) {
+  function playLottery() {
     // TODO: Add logic to determine which player wins.
-    //players[0].transfer(this.balance);
-    return players[0];
+    players[0].playerAddress.transfer(pot);
+    PayoutEvent(players[0].playerAddress, pot);
   }
-*/
-
-
 }
