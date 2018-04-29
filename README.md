@@ -76,3 +76,4 @@ A generic description of the smart contract lottery system.
 * There’s a limit of how much Ether one participant can insert.
 * The chances of winning is based on the amount of Ether inserted by each participant.
 * When the winner has been decided, the winnings will be rewarded to the winner, and the other participants will be notified that the game has ended.
+* **NB!**: Only submit values of Ether that are multiples of 0.1: 0.1, 4.2, 1.0 etc.
