@@ -77,3 +77,40 @@ A generic description of the smart contract lottery system.
 * The chances of winning is based on the amount of Ether inserted by each participant.
 * When the winner has been decided, the winnings will be rewarded to the winner, and the other participants will be notified that the game has ended.
 * **NB!**: Only submit values of Ether that are multiples of 0.1: 0.1, 4.2, 1.0 etc.
+
+# Intermediate Presentation
+
+### Intro
+- Smart Contracts and Ethereum Blockchain
+- Our implementation - Decentralized Lottery
+- Resources
+- Solidity - File Structure
+- Teaser of Final Presentation
+
+### Smart Contracts on Ethereum Blockchain
+- Smart contracts are deployed on the Ethereum blockchain in order to execute modifyible code.
+- When executing functions on the Blockchain, it is important to keep in mind that every execution costs gas.
+
+### Decentralized Lottery Application
+- Each player inputs certain amount of Ether in the lottery.
+- When the lottery cap has been reached, the lottery will start.
+- When the winner has been decided, the winnings will be rewarded to the winner, and the other participants will be notified that the game has ended.
+- Decentralization increases expected earnings compared to lottery with a centralized actor.
+
+### Resources
+- **Ethereum**: The blockchain the smart contracts are built upon.
+- **Solidity**: The standardized programming language of smart contracts in Ethereum.
+- **Truffle**: Most popular development framework in Ethereum.
+- **Ganache**: Local Ethereum blockchain for dev.
+- **MetaMask**: A browser extension which allows you to run dApps directly in the browser.
+
+### Solidity - File Structure
+- **Build**: The compiled JSON files created which contains all the information needed to interact with the Smart Contract.
+- **Contracts**: Contains the actual contract code, where the contracts are defined.
+- **Migrations**: Specify which contract to deploy.
+- **truffle.js**: Truffle config file, specifying local port number, network id, etc.
+
+### Final Presentation
+- How do we have to implement in order to minimize the gas cost?
+- There are no specified or standardized way in order to generate (pseudo) random numbers in Ethereum yet. We wish to figure out the best way, both in terms of non-prediction and gas cost.
+- We also wish to create a neat front-end in which users can interact with our smart contract implementation.
