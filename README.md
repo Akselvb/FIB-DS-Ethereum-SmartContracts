@@ -114,3 +114,8 @@ A generic description of the smart contract lottery system.
 - How do we have to implement in order to minimize the gas cost?
 - There are no specified or standardized way in order to generate (pseudo) random numbers in Ethereum yet. We wish to figure out the best way, both in terms of non-prediction and gas cost.
 - We also wish to create a neat front-end in which users can interact with our smart contract implementation.
+
+# Intermediate Presentation - Feedback
+- Maybe look at different design patterns or implementations and compare the gas cost.
+- Consider the possibility to have a third party number generator that can return a random generated number.
+- Otherwise they where happy!
