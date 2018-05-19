@@ -26,7 +26,7 @@ contract Lottery {
     accumulatedLotteryTicketNumber = 0;
   }
 
-address sender;
+
   function addPlayer() payable public {
     require(msg.value >= 0.1 ether);
     require(pot + msg.value <= 5 ether);
@@ -35,7 +35,10 @@ address sender;
     newPlayer.playerAddress = msg.sender;
     newPlayer.amount = msg.value;
 
-
+    /*
+      This method of processing an array might be worth talking about.
+      https://ethereum.stackexchange.com/questions/3373/how-to-clear-large-arrays-without-blowing-the-gas-limit
+    */
     if (numPlayers == players.length) {
       players.length += 1;
     }
@@ -48,18 +51,9 @@ address sender;
     if (pot == 5 ether) {
       playLottery();
     }
-    sender = msg.sender;
-  }
-
-  function get() returns (address) {
-    return sender;
   }
 
 
-  /*
-    This method of processing an array might be worth talking about.
-    https://ethereum.stackexchange.com/questions/3373/how-to-clear-large-arrays-without-blowing-the-gas-limit
-  */
   function getPlayers() constant public returns (address[], uint[]){
     address[] memory playerAddresses = new address[](numPlayers);
     uint[] memory amounts = new uint[](numPlayers);

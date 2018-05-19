@@ -29,8 +29,45 @@
   margin-bottom: 50px;
 }
 
+.place-bets {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+}
+
+.place-bets label {
+    font-weight: lighter;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.address-input {
+  width: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.ether-label {
+  margin-left: 16px;
+}
+
+.ether-input {
+  width: 90%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+  height: 32px;
+}
+
 #AddressTable {
   border-collapse: collapse;
+  width: 700px
 }
 
 #AddressTable th {
@@ -43,6 +80,7 @@
 }
 
 #AddressTable tr:nth-child(even){background-color: #f2f2f2;}
+
 #AddressTable tr:hover {background-color: #ddd;}
 
 #AddressTable td, #AddressTable th {
