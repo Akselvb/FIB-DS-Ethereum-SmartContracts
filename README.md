@@ -150,5 +150,7 @@ What is the problem we are trying to solve?
 - https://blog.otlw.co/random-in-ethereum-50eefd09d33e
 - General rule to use blockhash as source of randomness: The total value of the pot is less than what a miner earns by mining a single block.
 - Discuss trade-offs related to this subject.
+- https://ethereum.stackexchange.com/questions/419/when-can-blockhash-be-safely-used-for-a-random-number-when-would-it-be-unsafe
+
 
 ### Deployed Version of Lottery dApp
