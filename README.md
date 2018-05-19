@@ -72,6 +72,17 @@ After running *truffle migrate --reset*, the owner address of the contract is ge
 - Get balance of account: **web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]))**
 
 
+### Start GUI
+- testrpc
+- npm start
+- truffle compile
+- truffle migrate --reset
+- truffle console
+- Lottery.deployed().then(inst => {lottery=inst})
+- var lotteryContractABI = JSON.stringify(lottery.abi)
+- var lotteryContractAddress = lottery.address
+- localhost:3000
+
 # Smart Contract Lottery
 
 ### Rules
