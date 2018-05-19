@@ -90,10 +90,12 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ETHEREUM LOTTERY</h1>
+          <h3>A DECENTRALIZED APPLICATION</h3>
         </header>
 
+        <div align="center">
         <div className="Table">
-          <table>
+          <table id="AddressTable">
             <thead>
               <tr>
                 <th>PlayerAddress</th>
@@ -111,11 +113,11 @@ class App extends Component {
         </div>
 
         <div className="Table">
-          <table>
+          <table id="AddressTable">
             <thead>
               <tr>
                 <th>Available Addresses</th>
-                <th>Available Funds</th>
+                <th>Available Ether</th>
               </tr>
             </thead>
             <tbody>
@@ -124,8 +126,10 @@ class App extends Component {
           </table>
         </div>
 
-        <button onClick={this.buttonClicked}> The Button </button>
-        <button onClick={this.getPlayers}> Get Players </button>
+        <button onClick={this.buttonClicked} align="center"> The Button </button>
+        <button onClick={this.getPlayers} align="center"> Get Players </button>
+
+        </div>
       </div>
     );
   }

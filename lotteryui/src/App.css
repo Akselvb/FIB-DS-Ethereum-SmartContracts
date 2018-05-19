@@ -9,7 +9,7 @@
 .App-header {
   background-color: #ddd;
   height: 150px;
-  padding: 20px;
+  padding: 40px;
   color: black;
 }
 
@@ -26,8 +26,30 @@
 }
 
 .Table {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
+
+#AddressTable {
+  border-collapse: collapse;
+}
+
+#AddressTable th {
+  padding-top: 6px;
+  font-weight: lighter;
+  padding-bottom: 6px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#AddressTable tr:nth-child(even){background-color: #f2f2f2;}
+#AddressTable tr:hover {background-color: #ddd;}
+
+#AddressTable td, #AddressTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
