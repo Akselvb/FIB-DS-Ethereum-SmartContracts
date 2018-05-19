@@ -67,7 +67,7 @@ After running *truffle migrate --reset*, the owner address of the contract is ge
 
 - Save an account to a variable: **account0 = web3.eth.accounts[0]**
 - Create an instance of the Smart Contract: **Lottery.deployed().then(inst => {lottery=inst})**
-- Add a new player to the lottery: **lottery.addPlayer({from: account0, value: web3.toWei(1.0, "ether")})**
+- Add a new player to the lottery: **lottery.addPlayer({from: account0, value: web3.toWei(2.5, "ether")})**
 - Call get functions: **lottery.getPlayers()**
 - Get balance of account: **web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]))**
 
@@ -147,6 +147,8 @@ What is the problem we are trying to solve?
 
 ### Random Number Generation
 - [What is the 'most trusted' way to generate random numbers yet](https://ethereum.stackexchange.com/questions/191/how-can-i-securely-generate-a-random-number-in-my-smart-contract)
+- https://blog.otlw.co/random-in-ethereum-50eefd09d33e
+- General rule to use blockhash as source of randomness: The total value of the pot is less than what a miner earns by mining a single block.
 - Discuss trade-offs related to this subject.
 
 ### Deployed Version of Lottery dApp
