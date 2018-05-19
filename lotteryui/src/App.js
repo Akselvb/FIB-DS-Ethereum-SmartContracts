@@ -90,13 +90,9 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ETHEREUM LOTTERY</h1>
-
         </header>
-        <p className="App-intro">
-          Total pot: {this.getBalance()} / 5 Ether.
-        </p>
 
-        <div className="App-content">
+        <div className="Table">
           <table>
             <thead>
               <tr>
@@ -107,12 +103,14 @@ class App extends Component {
             <tbody>
               {TableRowsPlayers}
             </tbody>
+            <tfoot>
+              <th>Total</th>
+              <th>{this.getBalance()} / 5 Ether</th>
+            </tfoot>
           </table>
         </div>
 
-        <span> </span>
-
-        <div className="App-content">
+        <div className="Table">
           <table>
             <thead>
               <tr>

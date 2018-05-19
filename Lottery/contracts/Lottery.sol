@@ -26,7 +26,7 @@ contract Lottery {
     accumulatedLotteryTicketNumber = 0;
   }
 
-
+address sender;
   function addPlayer() payable public {
     require(msg.value >= 0.1 ether);
     require(pot + msg.value <= 5 ether);
@@ -48,6 +48,11 @@ contract Lottery {
     if (pot == 5 ether) {
       playLottery();
     }
+    sender = msg.sender;
+  }
+
+  function get() returns (address) {
+    return sender;
   }
 
 
