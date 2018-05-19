@@ -7,14 +7,20 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 
 
 ### TODO's
-* Implement logic for how to pick the winner. Need to randomly pick a number and find the winner using this.
-* Implement how to decide when the lottery should trigger.
-* Make intermediate presentation powerpoint.
+**Tuesday 31.05.2018**
+- Implement random number generator from a TTP.
+- Implement front-end.
+- Make final presentation poster.
+
+**Sunday 10.06.2018**
+- Write white paper in Google Drive.
+- Convert white paper to Latex and upload to BSCW.
 
 
 ### Deadlines
-* **Tuesday 08.05.2018**: Group work intermediate results.
-* **Tuesday 31.05.2018**: Final presentation.
+- **Tuesday 08.05.2018**: Group work intermediate results.
+- **Tuesday 31.05.2018**: Final presentation.
+- **Sunday 10.06.2018**: White paper.
 
 
 ### Links/resources
@@ -32,7 +38,7 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 * [MetaMask](https://metamask.io/)
 
 
-## How to deploy a Smart Contract implementation on Ethereum test blockchain
+### How to deploy a Smart Contract implementation on Ethereum test blockchain
 1. run *truffle init*
 2. Copy-paste the following to *truffle.js*
 ```javascript
@@ -55,7 +61,7 @@ module.exports = {
   - objectName.setValue("Values", "to", "insert")
 
 
-## Truffle nice to know.
+### Truffle nice to know.
 After running *truffle migrate --reset*, the owner address of the contract is generated.
 [TruffleMigrate](images/truffle_migrate.png)
 
@@ -66,7 +72,7 @@ After running *truffle migrate --reset*, the owner address of the contract is ge
 - Get balance of account: **web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]))**
 
 
-## Smart Contract Lottery
+# Smart Contract Lottery
 
 ### Rules
 A generic description of the smart contract lottery system.
@@ -77,6 +83,7 @@ A generic description of the smart contract lottery system.
 * The chances of winning is based on the amount of Ether inserted by each participant.
 * When the winner has been decided, the winnings will be rewarded to the winner, and the other participants will be notified that the game has ended.
 * **NB!**: Only submit values of Ether that are multiples of 0.1: 0.1, 4.2, 1.0 etc.
+
 
 # Intermediate Presentation
 
@@ -115,7 +122,31 @@ A generic description of the smart contract lottery system.
 - There are no specified or standardized way in order to generate (pseudo) random numbers in Ethereum yet. We wish to figure out the best way, both in terms of non-prediction and gas cost.
 - We also wish to create a neat front-end in which users can interact with our smart contract implementation.
 
-# Intermediate Presentation - Feedback
+### Intermediate Presentation - Feedback
 - Maybe look at different design patterns or implementations and compare the gas cost.
 - Consider the possibility to have a third party number generator that can return a random generated number.
 - Otherwise they where happy!
+
+
+# Final Presentation
+
+### Lottery as a dApp
+What is the problem we are trying to solve?
+- Our goal is to maximize the expected income for every user.
+- In a perfect, decentralized world: Expected income is equal to outcome.
+- Expected income should be greater than compared to using a centralized actor.
+- *Statistics showing the difference between our application and centralized actors, in terms of profitability.*
+- Do number of players affect the pay-offs?
+- How close are we to 1-to-1 outcome/income?
+- Smooth transition to gas cost.
+
+### Gas Cost
+- What factors/operations cost the most amount of gas.
+- The lecturer was interested in how DDoS attacks can be prevented if read-operations are almost for free.
+- Compare the function getPlayers() with another implementation. Tets both and discuss the difference in terms of gas usage.
+
+### Random Number Generation
+- [What is the 'most trusted' way to generate random numbers yet](https://ethereum.stackexchange.com/questions/191/how-can-i-securely-generate-a-random-number-in-my-smart-contract)
+- Discuss trade-offs related to this subject.
+
+### Deployed Version of Lottery dApp
