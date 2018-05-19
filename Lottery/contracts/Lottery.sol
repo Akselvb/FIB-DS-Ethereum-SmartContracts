@@ -1,4 +1,4 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.4.1;
 
 contract Lottery {
 
@@ -29,16 +29,13 @@ contract Lottery {
 
   function addPlayer() payable public {
     require(msg.value >= 0.1 ether);
-    require(pot + msg.value <= 10 ether);
+    require(pot + msg.value <= 5 ether);
 
     Player memory newPlayer;
     newPlayer.playerAddress = msg.sender;
     newPlayer.amount = msg.value;
 
-    /*
-      This method of processing an array might be worth talking about.
-      https://ethereum.stackexchange.com/questions/3373/how-to-clear-large-arrays-without-blowing-the-gas-limit
-    */
+
     if (numPlayers == players.length) {
       players.length += 1;
     }
@@ -46,15 +43,18 @@ contract Lottery {
 
     pot += msg.value;
 
-    //emit PlayerAddedEvent(msg.sender, msg.value, getBalance());
-    getBalance();
+    emit PlayerAddedEvent(msg.sender, msg.value, getBalance());
 
-    if (pot == 10 ether ) {
+    if (pot == 5 ether) {
       playLottery();
     }
   }
 
 
+  /*
+    This method of processing an array might be worth talking about.
+    https://ethereum.stackexchange.com/questions/3373/how-to-clear-large-arrays-without-blowing-the-gas-limit
+  */
   function getPlayers() constant public returns (address[], uint[]){
     address[] memory playerAddresses = new address[](numPlayers);
     uint[] memory amounts = new uint[](numPlayers);
@@ -79,8 +79,9 @@ contract Lottery {
   uint winnerTickerNumber;
 
   function playLottery() private {
-    winnerTickerNumber = getWinnerTicketNumber();
+    winnerTickerNumber = generateWinnerTicketNumber();
     uint playerIndex = 0;
+
     while (true) {
       accumulatedLotteryTicketNumber += players[playerIndex].amount / (10 ** 17);
       if (accumulatedLotteryTicketNumber >= winnerTickerNumber) {
@@ -93,13 +94,10 @@ contract Lottery {
       }
     }
   }
-  
 
-  /*
-    TODO: Implement a way to randomly choose a value between 1 and 100.
-  */
-  function getWinnerTicketNumber() constant private returns (uint) {
-    return 42;
+
+  function generateWinnerTicketNumber() constant private returns (uint) {
+    return uint(block.blockhash(block.number-1))%50 + 1;
   }
 
 
@@ -108,4 +106,11 @@ contract Lottery {
     restartLottery();
     emit PayoutEvent(winner, pot);
   }
+
+
+  function getWinnerTicketNumber() constant public returns (uint) {
+    return winnerTickerNumber;
+  }
+
+
 }
