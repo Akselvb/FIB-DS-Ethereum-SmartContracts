@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-header {
+  background-color: #ddd;
+  height: 150px;
+  padding: 40px;
+  color: black;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-text {
+  font-size: small;
+}
+
+.Table {
+  margin-bottom: 50px;
+}
+
+.place-bets {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+}
+
+.place-bets label {
+    font-weight: lighter;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.addressInput {
+  width: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.etherLabel {
+  margin-left: 16px;
+}
+
+.etherInput {
+  width: 90%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+  height: 32px;
+}
+
+#AddressTable {
+  border-collapse: collapse;
+  width: 700px
+}
+
+#AddressTable th {
+  padding-top: 6px;
+  font-weight: lighter;
+  padding-bottom: 6px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#AddressTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#AddressTable tr:hover {background-color: #ddd;}
+
+#AddressTable td, #AddressTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
