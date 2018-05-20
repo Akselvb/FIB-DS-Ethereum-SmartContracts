@@ -82,6 +82,7 @@ After running *truffle migrate --reset*, the owner address of the contract is ge
 - var lotteryContractABI = JSON.stringify(lottery.abi)
 - var lotteryContractAddress = lottery.address
 - localhost:3000
+- **NB**: You might have to add a new player through truffle console in order to make it work first
 
 # Smart Contract Lottery
 
