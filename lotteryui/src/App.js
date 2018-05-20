@@ -9,7 +9,7 @@ var ETHEREUM_CLIENT = new Web3(new Web3.providers.HttpProvider("http://localhost
 
 var lotteryContractABI = [{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"playerAddress","type":"address"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"target","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"PayoutEvent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"pot","type":"uint256"}],"name":"PlayerAddedEvent","type":"event"},{"constant":false,"inputs":[],"name":"restartLottery","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"addPlayer","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getPlayers","outputs":[{"name":"","type":"address[]"},{"name":"","type":"uint256[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getWinnerTicketNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
 
-var lotteryContractAddress = '0x21ac2793e84ae127c5c3f535f6df907acb5d12ba';
+var lotteryContractAddress = '0x8fb4279076a97afe6126e4e0ef8e4fb505a08253';
 
 var lotteryContract = ETHEREUM_CLIENT.eth.contract(lotteryContractABI).at(lotteryContractAddress);
 
@@ -24,15 +24,21 @@ class App extends Component {
       amounts: [],
       availableAddresses: [],
       availableFunds: [],
+      potSize: 0,
       addressInput: "",
       etherInput: ""
     }
   }
 
   componentWillMount() {
+    this.resetState();
+  }
+
+  resetState() {
     console.log(lotteryContract);
-    console.log(ETHEREUM_CLIENT);
+    console.log(web3);
     var data = lotteryContract.getPlayers();
+    var potSize = lotteryContract.getBalance() / (10**18);
     var availAddresses = lotteryContract._eth.accounts;
     var availFunds = []
     for (let i = 0; i < availAddresses.length; i++) {
@@ -42,9 +48,11 @@ class App extends Component {
       playerAdresses: String(data[0]).split(','),
       amounts: String(data[1]).split(','),
       availableAddresses: String(availAddresses).split(','),
-      availFunds: String(availFunds).split(',')
+      availFunds: String(availFunds).split(','),
+      potSize
     })
   }
+
 
   handleAddressInput = (e) => {
     this.setState({addressInput: e.target.value});
@@ -62,28 +70,18 @@ class App extends Component {
   }
 
   getBalance() {
-    return lotteryContract.getBalance() / (10 ** 18);
-  }
-
-  getAvailableAddresses() {
-    var outString = "";
-    for (var i = 0; i < 10; i++) {
-      outString = outString + lotteryContract._eth.accounts[i] + " ";
-    }
-    return outString;
+    return this.state.potSize;
   }
 
   joinLotteryButtonClicked() {
-    this.cancelInput();
-    /*
     var address = this.state.addressInput;
-    var val = this.etherInput;
+    var val = this.state.etherInput;
+    this.cancelInput();
     lotteryContract.addPlayer({ from: address, value: web3.toWei(val, "ether")});
-    */
+    this.resetState();
   }
 
-
-  render() {
+  getTableRowsPlayers() {
     var TableRowsPlayers = []
     _.each(this.state.playerAdresses, (value, index) => {
       TableRowsPlayers.push(
@@ -93,7 +91,10 @@ class App extends Component {
         </tr>
       )
     })
+    return TableRowsPlayers;
+  }
 
+  getTableRowsAvailAddresses() {
     var TableRowsAvailAddresses = []
     _.each(this.state.availableAddresses, (value, index) => {
       TableRowsAvailAddresses.push(
@@ -103,10 +104,14 @@ class App extends Component {
         </tr>
       )
     })
+    return TableRowsAvailAddresses;
+  }
 
 
+  render() {
     return (
       <div className="App">
+
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ETHEREUM LOTTERY</h1>
@@ -138,7 +143,6 @@ class App extends Component {
           <button className="button" onClick={(e) => { this.joinLotteryButtonClicked() }}>Join Lottery!</button>
 
 
-
           <div className="Table">
             <table id="AddressTable">
               <thead>
@@ -148,7 +152,7 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {TableRowsPlayers}
+                {this.getTableRowsPlayers()}
               </tbody>
               <tfoot>
                 <th>Total</th>
@@ -166,7 +170,7 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {TableRowsAvailAddresses}
+                {this.getTableRowsAvailAddresses()}
               </tbody>
             </table>
           </div>
