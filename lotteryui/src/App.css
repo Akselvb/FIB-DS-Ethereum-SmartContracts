@@ -43,18 +43,18 @@
     text-align: left;
 }
 
-.address-input {
+.addressInput {
   width: 100%;
   padding: 8px 15px;
   margin: 8px 0;
   box-sizing: border-box;
 }
 
-.ether-label {
+.etherLabel {
   margin-left: 16px;
 }
 
-.ether-input {
+.etherInput {
   width: 90%;
   padding: 8px 15px;
   margin: 8px 0;

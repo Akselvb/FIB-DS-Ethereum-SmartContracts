@@ -9,7 +9,7 @@ var ETHEREUM_CLIENT = new Web3(new Web3.providers.HttpProvider("http://localhost
 
 var lotteryContractABI = [{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"playerAddress","type":"address"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"target","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"PayoutEvent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"pot","type":"uint256"}],"name":"PlayerAddedEvent","type":"event"},{"constant":false,"inputs":[],"name":"restartLottery","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"addPlayer","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getPlayers","outputs":[{"name":"","type":"address[]"},{"name":"","type":"uint256[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getWinnerTicketNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
 
-var lotteryContractAddress = '0xa86f426b37fe0084e7424402e5be0ce60c1b8e60';
+var lotteryContractAddress = '0x21ac2793e84ae127c5c3f535f6df907acb5d12ba';
 
 var lotteryContract = ETHEREUM_CLIENT.eth.contract(lotteryContractABI).at(lotteryContractAddress);
 
@@ -23,7 +23,9 @@ class App extends Component {
       playerAdresses: [],
       amounts: [],
       availableAddresses: [],
-      availableFunds: []
+      availableFunds: [],
+      addressInput: "",
+      etherInput: ""
     }
   }
 
@@ -44,6 +46,21 @@ class App extends Component {
     })
   }
 
+  handleAddressInput = (e) => {
+    this.setState({addressInput: e.target.value});
+  }
+
+  handleEtherInput = (e) => {
+    this.setState({etherInput: e.target.value});
+  }
+
+  cancelInput = () => {
+    this.setState({
+      addressInput: "",
+      etherInput: ""
+    })
+  }
+
   getBalance() {
     return lotteryContract.getBalance() / (10 ** 18);
   }
@@ -57,9 +74,12 @@ class App extends Component {
   }
 
   joinLotteryButtonClicked() {
-    var address = this.refs.addressTextBox.value
-    var val = this.refs.etherTextBox.value;
+    this.cancelInput();
+    /*
+    var address = this.state.addressInput;
+    var val = this.etherInput;
     lotteryContract.addPlayer({ from: address, value: web3.toWei(val, "ether")});
+    */
   }
 
 
@@ -96,13 +116,23 @@ class App extends Component {
         <div align="center">
 
           <div className="place-bets">
-            <label>Address</label>
-            <input className="address-input" type="text" ref="addressTextBox"/>
+            <label className="addressLabel">Address</label>
+            <input
+              value={this.state.addressInput}
+              onChange={this.handleAddressInput}
+              className="addressInput"
+              type="text"
+            />
           </div>
 
           <div className="place-bets">
-            <label className="ether-label">Ether</label>
-            <input className="ether-input" type="text" ref="etherTextBox"/>
+            <label className="etherLabel">Ether</label>
+            <input
+              value={this.state.etherInput}
+              onChange={this.handleEtherInput}
+              className="etherInput"
+              type="text"
+            />
           </div>
 
           <button className="button" onClick={(e) => { this.joinLotteryButtonClicked() }}>Join Lottery!</button>
