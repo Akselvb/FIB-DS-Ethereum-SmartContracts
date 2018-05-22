@@ -8,9 +8,9 @@ As the scope of the lab description states, we will implement and evaluate a Dec
 
 ### TODO's
 **Tuesday 31.05.2018**
-- Implement random number generator from a TTP.
-- Implement front-end.
-- Make final presentation poster.
+- Implement random number generator from a TTP. (Might skip it).
+- Implement front-end. (Only thing left is to update state when other people update theirs (lodash.debounce I believe)).
+- Make final presentation poster on Google Drive and upload to BSCW.
 
 **Sunday 10.06.2018**
 - Write white paper in Google Drive.
