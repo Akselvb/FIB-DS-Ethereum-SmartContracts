@@ -9,7 +9,7 @@ var ETHEREUM_CLIENT = new Web3(new Web3.providers.HttpProvider("http://localhost
 
 var lotteryContractABI = [{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"playerAddress","type":"address"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"target","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"PayoutEvent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"pot","type":"uint256"}],"name":"PlayerAddedEvent","type":"event"},{"constant":false,"inputs":[],"name":"restartLottery","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"addPlayer","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getPlayers","outputs":[{"name":"","type":"address[]"},{"name":"","type":"uint256[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getWinnerTicketNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
 
-var lotteryContractAddress = '0x04fce3562b549bc94ec9bdaf1871377c4787a141';
+var lotteryContractAddress = '0xbaade62750308c2ecb5c58464ce974dcf83d7dff';
 
 var lotteryContract = ETHEREUM_CLIENT.eth.contract(lotteryContractABI).at(lotteryContractAddress);
 
@@ -79,7 +79,17 @@ class App extends Component {
   joinLotteryButtonClicked() {
     var address = this.state.addressInput;
     var val = this.state.etherInput;
+
     this.cancelInput();
+
+    if ((val * 10) % 1 != 0) {
+      this.setState({
+        errorMessage: "You must chose a multiplicative of 0.1. Please try again."
+      })
+      return;
+    }
+
+
     try {
       lotteryContract.addPlayer({ from: address, value: web3.toWei(val, "ether"), gas: 3000000});
     }
