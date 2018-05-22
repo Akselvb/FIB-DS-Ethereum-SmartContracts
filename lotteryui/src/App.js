@@ -47,7 +47,9 @@ class App extends Component {
     var availAddresses = lotteryContract._eth.accounts;
     var availFunds = []
     for (let i = 0; i < availAddresses.length; i++) {
-      availFunds.push(parseInt(lotteryContract._eth.getBalance(lotteryContract._eth.accounts[i]))/(10**18));
+      let value = parseInt(lotteryContract._eth.getBalance(lotteryContract._eth.accounts[i]))/(10**18);
+      value = Math.round(value*1000)/1000;
+      availFunds.push(value);
     }
     this.setState({
       playerAdresses: String(data[0]).split(','),
@@ -110,7 +112,7 @@ class App extends Component {
       TableRowsPlayers.push(
         <tr>
          <td>{this.state.playerAdresses[index]}</td>
-         <td>{this.state.amounts[index]}</td>
+         <td align="center">{this.state.amounts[index]}</td>
         </tr>
       )
     })
@@ -123,7 +125,7 @@ class App extends Component {
       TableRowsAvailAddresses.push(
         <tr>
           <td>{this.state.availableAddresses[index]}</td>
-          <td>{this.state.availFunds[index]}</td>
+          <td align="center">{this.state.availFunds[index]}</td>
         </tr>
       )
     })
