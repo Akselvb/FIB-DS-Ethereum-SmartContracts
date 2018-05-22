@@ -40,11 +40,14 @@ class App extends Component {
     // // console.log(lotteryContract);
     // // console.log(web3);
     var data = lotteryContract.getPlayers();
+    for (let i = 0; i < data[1].length; i++) {
+      data[1][i] = parseInt(data[1][i])/(10**18);
+    }
     var potSize = lotteryContract.getBalance() / (10**18);
     var availAddresses = lotteryContract._eth.accounts;
     var availFunds = []
     for (let i = 0; i < availAddresses.length; i++) {
-      availFunds.push(lotteryContract._eth.getBalance(lotteryContract._eth.accounts[i]));
+      availFunds.push(parseInt(lotteryContract._eth.getBalance(lotteryContract._eth.accounts[i]))/(10**18));
     }
     this.setState({
       playerAdresses: String(data[0]).split(','),
@@ -88,7 +91,6 @@ class App extends Component {
       })
       return;
     }
-
 
     try {
       lotteryContract.addPlayer({ from: address, value: web3.toWei(val, "ether"), gas: 3000000});
