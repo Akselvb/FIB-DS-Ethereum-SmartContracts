@@ -14,7 +14,6 @@ contract Lottery {
     uint256 amount;
   }
 
-
   function Lottery() public {
     restartLottery();
   }

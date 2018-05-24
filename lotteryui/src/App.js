@@ -9,7 +9,7 @@ var ETHEREUM_CLIENT = new Web3(new Web3.providers.HttpProvider("http://localhost
 
 var lotteryContractABI = [{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"playerAddress","type":"address"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"target","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"PayoutEvent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"pot","type":"uint256"}],"name":"PlayerAddedEvent","type":"event"},{"constant":false,"inputs":[],"name":"restartLottery","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"addPlayer","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getPlayers","outputs":[{"name":"","type":"address[]"},{"name":"","type":"uint256[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getWinnerTicketNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
 
-var lotteryContractAddress = '0xbaade62750308c2ecb5c58464ce974dcf83d7dff';
+var lotteryContractAddress = '0x91450bb982f5d8193b11a93a71915e959e9edc7f';
 
 var lotteryContract = ETHEREUM_CLIENT.eth.contract(lotteryContractABI).at(lotteryContractAddress);
 
@@ -33,11 +33,21 @@ class App extends Component {
 
   componentWillMount() {
     this.resetState();
+    console.log("abi:", lotteryContractABI);
   }
+
+  componentDidMount() {
+    var playerAddedEvent = lotteryContract.PlayerAddedEvent()
+    playerAddedEvent.watch((error, result) => {
+      if (!error) {
+        this.resetState()
+      }
+    })
+  }
+
 
   resetState() {
     // console.log(lotteryContract.getWinnerTicketNumber());
-    // // console.log(lotteryContract);
     // // console.log(web3);
     var data = lotteryContract.getPlayers();
     for (let i = 0; i < data[1].length; i++) {
@@ -135,7 +145,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div ref={elem => this.comp=elem} className="App">
 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
