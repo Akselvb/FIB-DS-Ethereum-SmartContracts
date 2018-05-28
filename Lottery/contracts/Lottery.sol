@@ -100,9 +100,9 @@ contract Lottery {
 
 
   function payout(address winner) private {
+    emit PayoutEvent(winner, pot);
     winner.transfer(pot);
     restartLottery();
-    emit PayoutEvent(winner, pot);
   }
 
 
